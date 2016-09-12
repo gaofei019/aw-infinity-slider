@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!--[if lte IE 9]><html class="lt-ie10 lt-ie9" xmlns="http://www.w3.org/1999/xhtml"> <![endif]-->
+<!--[if gt IE 9]><!--><html><!--<![endif]-->
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>赛氪</title>
+    <meta name="keywords" content=""/>
+    <meta name="description" content=""/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <link rel="Shortcut Icon" href="">
+    <link rel="apple-touch-icon-precomposed" href="">
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <!-- slider -->
+    <div class="sk-index-slider-box" id="skSlider">
+        <div class="sk-index-slider-btn-box">
+            <span class="item prev" id="sliderPrev">
+                <i class="common-icon-big"></i>
+            </span>
+            <span class="item next" id="sliderNext">
+                <i class="common-icon-big"></i>
+            </span>
+        </div>
+        <ol class="sk-index-count-box" id="sliderCount">
+            <li class="js_slider_count_num item active" data-index="1"></li>
+            <li class="js_slider_count_num item" data-index="2"></li>
+            <li class="js_slider_count_num item" data-index="3"></li>
+        </ol>
+        <div class="sk-index-slider-list-box" id="sliderListBox">
+            <div class="fl js_slider_item item" style="background-image:url(http://7xawxl.com1.z0.glb.clouddn.com/Fl7KUmG_3aUegmLAdXlynORaOXP6);">
+                <a href="javascript:;" title="阿里云数据大赛">
+                    <div class="item-txt-box">
+                        <span class="item-txt"></span>
+                    </div>
+                </a>
+            </div>
+            <div class="fl js_slider_item item" style="background-image:url(http://publicqn.saikr.com/ff29824e8575e70bbc3d89bcc20c8bdb1468567293081.png)">
+                <a href="javascript:;" title="山东省大学生数学建模竞赛">
+                    <div class="item-txt-box">
+                        <span class="item-txt"></span>
+                    </div>
+                </a>
+            </div>
+            <div class="fl js_slider_item item" style="background-image:url(http://7xawxl.com1.z0.glb.clouddn.com/Fl7KUmG_3aUegmLAdXlynORaOXP6)">
+                <a href="javascript:;" title="阿里云数据大赛">
+                    <div class="item-txt-box">
+                        <span class="item-txt"></span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- slider end -->
+</body>
+</html>
+<script src="./jquery-1.10.2.min.js"></script>
+<script src="./sk.infinity.slider.js"></script>
+<script>
+    $(function(){
+        var $skSlider=$('#skSlider');
+        $skSlider.slider();//执行轮播
+    });
+</script>
