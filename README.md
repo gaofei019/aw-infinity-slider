@@ -4,3 +4,5 @@ adaptive-width-infinity-slider
 
 注：长时间运行有点儿内存泄漏，希望各位大神指正！
 eg: There is some memory leak in it.I hope someone to modify it.
+
+<h2>Demo: http://www.saikr.com</h2>
