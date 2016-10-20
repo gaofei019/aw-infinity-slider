@@ -103,6 +103,10 @@ a:focus, img:focus {
 .fr {
     float: right;
 }
+.common-icon-big {
+    background-image: url(http://cdn3.saikr.com/img/sk_icon_big.png);
+    background-repeat: no-repeat;
+}
 /* slider */
 .sk-index-slider-box {
     position: relative;
