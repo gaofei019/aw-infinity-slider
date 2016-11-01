@@ -5,49 +5,7 @@ Support touch event in mobile terminal.<br>
 
 <h3>使用方法：</h3>
 引入jquery或者zepto以及插件文件<br>
-html代码<br>
-<div class="highlight highlight-text-shell-session">
-<pre>
-		<div class="sk-index-slider-box" id="skSlider">
-			<div class="sk-index-slider-btn-box">
-				<span class="item prev" id="sliderPrev">
-					<i class="common-icon-big"></i>
-				</span>
-				<span class="item next" id="sliderNext">
-					<i class="common-icon-big"></i>
-				</span>
-			</div>
-			<ol class="sk-index-count-box" id="sliderCount">
-				<li class="js_slider_count_num item active" data-index="1"></li>
-				<li class="js_slider_count_num item" data-index="2"></li>
-				<li class="js_slider_count_num item" data-index="3"></li>
-			</ol>
-			<div class="sk-index-slider-list-box" id="sliderListBox">
-				<div class="fl js_slider_item item" style="background-image:url(http://publicqn.saikr.com/5413169c869bfda404fcf9035069c6381476870746895.png);">
-					<a href="javascript:;" title="阿里云数据大赛">
-						<div class="item-txt-box">
-							<span class="item-txt"></span>
-						</div>
-					</a>
-				</div>
-				<div class="fl js_slider_item item" style="background-image:url(http://publicqn.saikr.com/ff29824e8575e70bbc3d89bcc20c8bdb1468567293081.png)">
-					<a href="javascript:;" title="山东省大学生数学建模竞赛">
-						<div class="item-txt-box">
-							<span class="item-txt"></span>
-						</div>
-					</a>
-				</div>
-				<div class="fl js_slider_item item" style="background-image:url(http://publicqn.saikr.com/900fdfe02dc3147486988cdb7602fa241475230762392.jpg)">
-					<a href="javascript:;" title="阿里云数据大赛">
-						<div class="item-txt-box">
-							<span class="item-txt"></span>
-						</div>
-					</a>
-				</div>
-			</div>
-		</div>
-</pre>
-</div>
+html代码在html页面中<br>
 JS代码<br>
 <div class="highlight highlight-text-shell-session">
 <pre>
