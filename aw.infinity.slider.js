@@ -1,5 +1,5 @@
 $.fn.extend({
-    slider: function (){
+    slider: function (obj){
         this.each(function (){
             var oDiv=$(this),
                 aBtn=oDiv.find('#sliderCount .js_slider_count_num'),
@@ -41,32 +41,33 @@ $.fn.extend({
             //oUl.html(oUlHtmlDouble);
             oUl[0].innerHTML = oUlHtmlDouble;
             aLi=oDiv.find('#sliderListBox .js_slider_item');
-            
-            aLi.css('width',winWidth);
+            if(!obj ||(obj && obj.screenwidth==true)){
+            	aLi.css('width',winWidth);
+	    }
             oUlWidth = aLi.size()*aLi.width()+'px';
             
             oUl.css('width', oUlWidth);
             
             W=oUl.width()/2;
-
-            $win.off('resize').on('resize',function() {
-                var $t=$(this);
-                if (resizeTimer) {
-                    clearTimeout(resizeTimer)
-                }
-                //在一定的时间之内，只执行一次resize事件函数
-                resizeTimer = setTimeout(function(){
-                    winWidth = $t.width();
-                    aLi.css('width',winWidth);
-                    oUlWidth = aLi.size()*aLi.width()+'px';
-                    oUl.css('width', oUlWidth);
-                    W=oUl.width()/2;
-                    if(aBtn){//浏览器窗口变化后，触发滚动事件回到第一页，重新计算位移
-                        aBtn.eq(0).mouseenter();
-                    }
-                }, 400);
-            });
-            
+            if(!obj || (obj && obj.screenwidth==true)){
+	            $win.off('resize').on('resize',function() {
+	                var $t=$(this);
+	                if (resizeTimer) {
+	                    clearTimeout(resizeTimer)
+	                }
+	                //在一定的时间之内，只执行一次resize事件函数
+	                resizeTimer = setTimeout(function(){
+	                    winWidth = $t.width();
+	                    aLi.css('width',winWidth);
+	                    oUlWidth = aLi.size()*aLi.width()+'px';
+	                    oUl.css('width', oUlWidth);
+	                    W=oUl.width()/2;
+	                    if(aBtn){//浏览器窗口变化后，触发滚动事件回到第一页，重新计算位移
+	                        aBtn.eq(0).mouseenter();
+	                    }
+	                }, 400);
+	            });
+            }
             function aBtnMouse(){
                 aBtn.off('mouseenter').on('mouseenter',function (){
                     index=$(this).index();
