@@ -1,5 +1,5 @@
 # aw-infinity-slider
-adaptive-width-infinity-slider
+adaptive-width-infinity-slider<br>
 Support touch event in mobile terminal.
 自适应宽度无缝轮播jquery插件,支持移动端手指滑动。
 
