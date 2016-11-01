@@ -16,6 +16,8 @@ JS代码<br>
 </pre>
 </div>
 配置成固定宽度轮播（宽度通过CSS控制）<br>
+Dispose slider of fixed width which is controled by css;
+
 <div class="highlight highlight-text-shell-session">
 <pre>
 	$(function(){
