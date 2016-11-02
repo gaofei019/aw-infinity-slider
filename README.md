@@ -1,10 +1,10 @@
 # aw-infinity-slider
 adaptive-width-infinity-slider<br>
 Support touch event in mobile terminal.<br>
-自适应宽度无缝轮播jquery插件,支持移动端手指滑动。可以配置为固定宽度轮播。
+自适应宽度无缝轮播jquery,zepto插件,支持移动端手指滑动。可以配置为固定宽度轮播。
 
 <h3>使用方法：</h3>
-引入jquery或者zepto以及插件文件<br>
+引入jquery或者zepto<br>(使用zepto时，需要按照zepto的要求修改插件的写法)</b>以及插件文件<br>
 html代码在html页面中<br>
 JS代码<br>
 <div class="highlight highlight-text-shell-session">
@@ -24,6 +24,19 @@ Dispose slider of fixed width which is controled by css;
         var $skSlider=$('#skSlider');
         $skSlider.slider({
 			screenwidth:false
+		});//执行轮播
+    });
+</pre>
+</div>
+配置自动播放及间隔时间<br>
+Dispose auto play and time interval
+<div class="highlight highlight-text-shell-session">
+<pre>
+	$(function(){
+        var $skSlider=$('#skSlider');
+        $skSlider.slider({
+			auto:true, //默认不自动播放
+			time:5000 //单位:ms =>默认10000ms
 		});//执行轮播
     });
 </pre>
